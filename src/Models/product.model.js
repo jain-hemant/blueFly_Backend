@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
 const ProductSchema = mongoose.Schema({
-  category_id: { type: String, require: true },
-  sub_category_id: { type: String, require: true },
+  categoryId: { type: String, require: true },
+  subCategoryId: { type: String, require: true },
   product: { type: String, require: true },
   brand: { type: String, require: true },
-  supplier_id: { type: String, require: true },
+  supplierId: { type: String, require: true },
   price: { type: String, require: true, unique: true },
   color: { type: Array, require: true, default: [] },
   quantity: { type: Number, require: true, default: 1 },
